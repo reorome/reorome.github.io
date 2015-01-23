@@ -1,0 +1,79 @@
+nav ul {
+    display: block;
+    list-style: none;
+    margin: 0; padding: 0;
+    border: solid 1px #999999;
+    padding-top: 30px;
+    height: 3em;
+    overflow: hidden;
+}
+nav li {
+    display: inline-block;
+    width: 4em; height: 2em;
+    padding: 1em 0;
+    border-radius: 4em;
+    text-align: center;
+    background-color: #990000;
+    color: #FFCCCC;
+    vertical-align: top;
+    cursor: pointer;
+}
+nav li:not(:hover) {
+    -webkit-transition: -webkit-transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    transition: transform 0.4s;
+
+    -webkit-animation: fuwafuwa 1.2s linear 0.4s infinite;
+    animation: fuwafuwa 1.2s linear 0.4s infinite;
+}
+nav li:hover {
+    -webkit-animation: navitemrotation 0.14s linear 0s 1 normal;
+    animation: navitemrotation 0.14s linear 0s 1 normal;
+    -webkit-transform: translate(0px, -1em);
+    transform: translate(0px, -1em);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+
+    background-color: #660000;
+}
+@-webkit-keyframes navitemrotation {
+    from {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    to {
+        -webkit-transform: translate(0px, -1em) rotate(360deg);
+        transform: translate(0px, -1em) rotate(360deg);
+    }
+}
+@keyframes navitemrotation {
+    from {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    to {
+        -webkit-transform: translate(0px, -1em) rotate(360deg);
+        transform: translate(0px, -1em) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fuwafuwa {
+    to {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0px, -3px);
+        transform: translate(0px, -3px);
+    }
+}
+@keyframes fuwafuwa {
+    to {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+    50% {
+        -webkit-transform: translate(0px, -3px);
+        transform: translate(0px, -3px);
+    }
+}
