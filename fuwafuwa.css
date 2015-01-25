@@ -6,16 +6,20 @@ nav ul {
     padding-top: 30px;
     height: 3em;
     overflow: hidden;
+    border-bottom:medium groove;
+    
+    
 }
 nav li {
-    font-size:60%;
+    border: solid 1px #999999;
+    font-size:100%;
     display: inline-block;
-    width: 6em; height: 2em;
+    width: 6em; height: 10em;
     padding: 1em 0;
-    border-radius: 10em;
+    border-radius: 5em;
     text-align: center;
-    background-color: #4387E9;
-    color: #FFCCCC;
+    background-color: #DD84E0;
+    color: #FAFAFA;
     vertical-align: top;
     cursor: pointer;
 }
@@ -35,9 +39,9 @@ nav li:hover {
     -webkit-transform-origin: center;
     transform-origin: center;
 
-    background-color: #F0B325;
+    background-color: #691CC8;
 }
-@-webkit-keyframes navitemrotation {
+/*@-webkit-keyframes navitemrotation {
     from {
         -webkit-transform: translate(0px, 0px) rotate(0deg);
         transform: translate(0px, 0px) rotate(0deg);
@@ -56,7 +60,7 @@ nav li:hover {
         -webkit-transform: translate(0px, -1em) rotate(360deg);
         transform: translate(0px, -1em) rotate(360deg);
     }
-}
+}*/
 
 @-webkit-keyframes fuwafuwa {
     to {
