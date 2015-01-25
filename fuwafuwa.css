@@ -8,8 +8,9 @@ nav ul {
     overflow: hidden;
 }
 nav li {
+    font-size:60%;
     display: inline-block;
-    width: 4em; height: 2em;
+    width: 6em; height: 2em;
     padding: 1em 0;
     border-radius: 10em;
     text-align: center;
